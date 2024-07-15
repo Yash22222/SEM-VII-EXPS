@@ -1,1 +1,50 @@
+Natural Language Processing (NLP) Preprocessing Techniques
 
+Preprocessing is a crucial step in Natural Language Processing (NLP) that involves transforming raw text data into a format that can be effectively analyzed and used by machine learning models. The key preprocessing techniques include:
+
+# Tokenization:-
+
+1] Definition:- Tokenization is the process of splitting text into smaller units called tokens. These tokens can be words, phrases, or symbols.
+2] Purpose:- It converts the text into manageable pieces, making it easier to analyze and process.
+3] Example:- "Hello! This is a sample text."
+   After tokenization:- ['Hello', '!', 'This', 'is', 'a', 'sample', 'text', '.']
+
+# Filtration:-
+
+1] Definition:- Filtration involves removing unwanted elements from the text, such as punctuation, special characters, and stop words (common words that usually don't contribute much to the meaning of the text, like "is", "and", "the").
+2] Purpose:- It cleans the text, reducing noise and focusing on the most relevant parts for analysis.
+3] Example:- ['Hello', '!', 'This', 'is', 'a', 'sample', 'text', '.']
+   After filtration:- ['Hello', 'sample', 'text']
+
+# Script Validation:-
+
+1] Definition:- Script validation ensures that the tokens are in the expected script (e.g., Latin, Cyrillic, Arabic). This is particularly important in multilingual datasets.
+2] Purpose:- It confirms that the text is in the correct language script, ensuring consistency and relevance.
+3] Example:- ['Hello', 'sample', 'text', '你好']
+   After script validation (assuming only Latin script is expected):- ['Hello', 'sample', 'text']
+
+Practical Example
+Given the text:- 22222 Hazrat Nizamuddin - Mumbai CSMT Rajdhani Express Via Agra, Jhansi, Bhopal, Jalgaon, Nashik, Kalyan
+
+1. Tokenization:-
+Splitting the text into tokens:-
+['22222', 'Hazrat', 'Nizamuddin', '-', 'Mumbai', 'CSMT', 'Rajdhani', 'Express', 'Via', 'Agra', ',', 'Jhansi', ',', 'Bhopal', ',', 'Jalgaon', ',', 'Nashik', ',', 'Kalyan']
+
+2. Filtration:-
+Removing punctuation and stop words:-
+['22222', 'Hazrat', 'Nizamuddin', 'Mumbai', 'CSMT', 'Rajdhani', 'Express', 'Via', 'Agra', 'Jhansi', 'Bhopal', 'Jalgaon', 'Nashik', 'Kalyan']
+
+3. Script Validation:-
+Ensuring tokens are in the Latin script:-
+['Hazrat', 'Nizamuddin', 'Mumbai', 'CSMT', 'Rajdhani', 'Express', 'Via', 'Agra', 'Jhansi', 'Bhopal', 'Jalgaon', 'Nashik', 'Kalyan']
+
+
+
+['Hazrat', 'Nizamuddin', 'Mumbai', 'CSMT', 'Rajdhani', 'Express', 'Via', 'Agra', 'Jhansi', 'Bhopal', 'Jalgaon', 'Nashik', 'Kalyan']
+
+# Conclusion:-
+
+Preprocessing text through tokenization, filtration, and script validation is essential in NLP to ensure that the data is clean, relevant, and structured appropriately for analysis. 
+These steps help in reducing noise, focusing on meaningful information, and maintaining consistency, which ultimately enhances the performance of NLP models.
+By applying these preprocessing techniques, we transform raw text into a format that is ready for further NLP tasks, such as sentiment analysis, text classification, machine translation, and more. 
+This preprocessing stage is a foundational aspect of NLP that significantly contributes to the accuracy and effectiveness of subsequent analyses and models.
