@@ -1,0 +1,41 @@
+Aim - Apply various other text preprocessing techniques for any given text: Stop Word Removal, Lemmatization / Stemming
+
+Theory - Theory
+
+1. Stop Word Removal
+Theory:- Stop words are common words that carry less meaningful information in a text. Examples include "the", "is", "in", "and".
+Removing stop words helps in reducing the dimensionality of the data and focusing on the significant words that contribute more to the meaning of the text.
+NLTK provides a list of common stop words for different languages.
+
+Example:-  Original text: "This is a sample sentence."
+           Without stop words: "This sample sentence."
+
+2. Lemmatization
+Theory:- Lemmatization is the process of reducing words to their base or root form (known as the lemma). Unlike stemming, lemmatization returns real words.
+Lemmatization considers the context and transforms words to their base form using vocabulary and morphological analysis. For example, "running" becomes "run", and "better" becomes "good".
+It helps in understanding the context and meaning behind different word forms and reduces the vocabulary size.
+
+Example:-  Original word: "running"
+           Lemmatized form: "run"
+
+3. Stemming
+Theory:- Stemming is the process of reducing words to their root form by removing suffixes and prefixes. The resultant form may not always be a real word.
+It is a rule-based process, which makes it faster but less accurate compared to lemmatization.
+Stemming helps in reducing the variability of word forms and simplifies text analysis.
+
+Example:- Original word: "running"
+          Stemmed form: "run"
+
+Application on Provided Text - "Sir, we request you to please share Mobile No. with us via DM. You may also raise your concern directly on http://railmadad.indianrailways.gov.in or dial 139 for speedy redressal. - RPF India"
+
+Conclusion - 
+
+1. Stop Word Removal:-
+This process helps in eliminating words that do not add much value to text analysis. For instance, words like "we", "you", "to", "with", and "or" are removed.
+This reduction in word count helps focus on more significant terms.
+2. Lemmatization:-
+Lemmatization reduces words to their base form considering the context and grammatical correctness. For example, "running" would become "run", but in our example, most words remain unchanged because they are already in their base form or proper nouns (like "RPF", "India").
+It provides a more meaningful reduction of words while preserving grammatical integrity.
+3. Stemming:-
+Stemming is a more aggressive form of word reduction that often results in non-dictionary forms of words, as seen with "pleas" from "please" and "mobil" from "Mobile".
+While faster, it may not always produce semantically correct forms.
