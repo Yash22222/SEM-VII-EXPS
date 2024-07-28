@@ -1,0 +1,31 @@
+Suggested List of Experiments
+
+1. Based on Module I using Virtual Lab
+1. Implement Multilayer Perceptron algorithm to simulate XOR gate.
+2. To explore python libraries for deep learning e.g. Theano, TensorFlow etc.
+
+Module 2 (Any Two)
+3. Apply any of the following learning algorithms to learn the parameters of the supervised single layer feed forward neural network,
+     a. Stochastic Gradient Descent
+     b. Mini Batch Gradient Descent
+     c. Momentum GD
+     d. Nestorev GD
+     e. Adagrad GD
+    f. Adam Learning GD
+
+4. Implement a backpropagation algorithm to train a DNN with at least 2 hidden layers. 5.Design and implement a fully connected deep neural network with at least 2 hidden layers for a classification application. 
+Use appropriate Learning Algorithm, output function and loss function.
+
+Module 3 (Any One)
+6. Design the architecture and implement the autoencoder model for Image Compression.
+7. Design the architecture and implement the autoencoder model for Image denoising.
+
+Module 4 (Any One)
+8. Design and implement a CNN model for digit recognition application.
+9. Design and implement a CNN model for image classification.
+
+Module 5 (Any Two)
+10. Design and implement LSTM model for handwriting recognition, speech recognition, machine translation, speech activity detection, robot control, video games, time series forecasting etc.
+11. Design and implement GRU for any real life applications, chat bots etc.
+12. Design and implement RNN for classification of temporal data, sequence to sequence data modelling etc.
+
