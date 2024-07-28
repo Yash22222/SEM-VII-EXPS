@@ -1,0 +1,50 @@
+AIM - Implement Multilayer Perceptron Algorithm to Simulate XOR Gate.
+
+THEORY - Introduction to XOR Gate
+The XOR (exclusive OR) gate is a fundamental digital logic gate that outputs true or 1 only when the two binary bit inputs to it are unequal, i.e., when one is 0 and the other is 1. The truth table for an XOR gate is:
+
+| Input 1 | Input 2 | Output |
+|---------|---------|--------|
+|    0    |    0    |    0   |
+|    0    |    1    |    1   |
+|    1    |    0    |    1   |
+|    1    |    1    |    0   |
+
+Multilayer Perceptron (MLP)
+A Multilayer Perceptron is a class of feedforward artificial neural network (ANN). An MLP consists of at least three layers of nodes: an input layer, a hidden layer, and an output layer. 
+Each node (neuron) in one layer connects with a certain weight w to every node in the next layer. MLP utilizes a supervised learning technique called backpropagation for training the network.
+
+Architecture of MLP for XOR Gate
+1. Input Layer:- The input layer consists of two neurons corresponding to the two binary inputs.
+2. Hidden Layer:- The hidden layer typically consists of two neurons. This layer introduces the necessary non-linearity to solve the XOR problem.
+3. Output Layer:- The output layer consists of one neuron which provides the final output of the XOR gate.
+
+1. Activation Function
+The activation function used in MLP is the sigmoid function, defined as:
+         1
+σ(x)=  ----- 
+      1+e/\−x1
+​This function maps any real-valued number into the (0, 1) range, which is useful for binary classification problems like XOR.
+
+2. Forward Propagation
+In forward propagation, the input data is passed through the network layer by layer. For each neuron in the hidden layer and output layer, the output is calculated as:
+output=σ(∑(input⋅weight)+bias)
+Where σ is the sigmoid activation function.
+
+3. Backward Propagation
+Backward propagation involves the following steps:
+
+A. Error Calculation:- Compute the error at the output layer.
+Error = Actual Output − Predicted Output 
+B. Gradient Calculation:- Calculate the gradient of the error with respect to the weights and biases. This involves computing the derivative of the sigmoid function.
+σ′(x)=σ(x)⋅(1−σ(x))
+C. Weight and Bias Update: Update the weights and biases to minimize the error using the gradient descent algorithm.
+Weight = Weight + Learning Rate × Gradient
+
+CONCLUSION - The XOR gate represents a non-linearly separable problem which cannot be solved by a single-layer perceptron. 
+The Multilayer Perceptron (MLP) with at least one hidden layer successfully models the XOR function by introducing non-linearity through the hidden layer. 
+The use of sigmoid activation functions and the backpropagation algorithm enables the MLP to learn the appropriate weights and biases to correctly simulate the XOR gate.
+
+The training process involves adjusting these weights and biases to minimize the error between the actual output and the predicted output. 
+After sufficient training epochs, the MLP can accurately predict the XOR output for any given pair of binary inputs, demonstrating the power of neural networks in solving complex, non-linear problems.
+Thus, an MLP is an effective neural network architecture for simulating an XOR gate, providing a foundational example of how neural networks can be applied to solve more complex problems in machine learning and artificial intelligence.
