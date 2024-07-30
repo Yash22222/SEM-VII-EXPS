@@ -1,0 +1,87 @@
+AIM - Implement a backpropagation algorithm to train a DNN with at least 2 hidden layers. 
+
+THEORY - Backpropagation is a fundamental algorithm for training artificial neural networks, particularly deep neural networks (DNN). 
+It involves adjusting the weights and biases of the network to minimize the error between the predicted output and the actual output. 
+The aim is to enable the network to learn and generalize from the training data, thus making accurate predictions on new, unseen data.
+
+Structure of a Deep Neural Network (DNN)
+
+A typical DNN consists of:
+1. Input Layer: Accepts the input features.
+2. Hidden Layers: One or more neurons that process the input features. Each hidden layer transforms the data, capturing complex patterns.
+3. Output Layer: Produces the final prediction.
+
+In our case, the DNN has:-
+1. An input layer with a specified number of features.
+2. Two hidden layers with a specified number of neurons each.
+3. An output layer for binary classification.
+
+### Activation Function
+The sigmoid activation function is used in this implementation: σ(x)= 1 / 1+e/\−x
+The sigmoid function maps input values to a range between 0 and 1, suitable for binary classification tasks.
+
+### Forward Propagation
+Forward propagation involves computing the output of each neuron layer by layer:
+1. Input to Hidden Layer 1:- z1 = X ⋅ W1+b1
+                             a1 = σ(z1)
+2. Hidden Layer 1 to Hidden Layer 2:- z2 = a1 ⋅ W2 + b2
+                                      a2 = σ(z2)
+3. Hidden Layer 2 to Output Layer:- z3 = a2 ⋅ W3 + b3
+                                    ​a3 = σ(z3)
+
+### Loss Function
+The mean squared error (MSE) loss function is used to measure the error between the predicted output and the actual output:-
+       1   n      /\ 2
+MSE =  -  ∑    (y-yi)
+       n  i=1
+                                  /\
+Where y is the actual output, and y is the predicted output.
+
+### Backpropagation
+Backpropagation involves calculating the gradient of the loss function for each weight and bias in the network and updating them to minimize the loss. This is done in three main steps:
+
+1. Output Layer to Hidden Layer 2:-
+     ∂MSE     /\
+δ3 = ----  = (y - y) . σ′(z3)
+     ∂z3
+        T
+∇W3 = a  .δ3
+        2
+
+∇b3 = ∑δ3
+
+2. Hidden Layer 2 to Hidden Layer 1:-
+           T
+δ2 = δ3 . W . σ′ (z2)
+           3
+       T
+∇W2 = a . δ2
+       1
+
+∇b2 = ∑δ2
+
+3. Hidden Layer 1 to Input Layer:-
+           T
+δ1 = δ2 . W . σ′ (z1)
+           2
+
+       T
+∇W1 = X . δ1
+
+∇b1 = ∑δ1
+
+### Weight and Bias Updates:-
+Weights and biases are updated using the calculated gradients:
+W = W − α ⋅ ∇W
+b = b - α ⋅ ∇b
+Where α is the learning rate.
+
+CONCLUSION - The implemented backpropagation algorithm successfully trains a Deep Neural Network (DNN) with two hidden layers. The network learns to map the input features to the correct output through repeated adjustments of weights and biases during training.
+
+Key Takeaways:- 
+1. Non-linearity:- Using sigmoid activation functions introduces non-linearity, allowing the network to capture complex patterns.
+2. Gradient Descent:- Backpropagation leverages gradient descent to minimize the loss function, improving the network’s performance over time.
+3. Layer-wise Updates:- The algorithm systematically updates the weights and biases layer by layer, ensuring the entire network is optimized.
+4. Flexibility:- The network structure and training process can be adjusted (e.g., number of layers, neurons, epochs, learning rate) to suit different types of problems and datasets.
+
+By implementing and training the DNN with backpropagation, the network can generalize from the training data and make accurate predictions, demonstrating the effectiveness of neural networks for complex machine-learning tasks.
