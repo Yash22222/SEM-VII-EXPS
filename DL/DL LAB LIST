@@ -13,7 +13,8 @@ Module 2 (Any Two)
      e. Adagrad GD
     f. Adam Learning GD
 
-4. Implement a backpropagation algorithm to train a DNN with at least 2 hidden layers. 5.Design and implement a fully connected deep neural network with at least 2 hidden layers for a classification application. 
+4. Implement a backpropagation algorithm to train a DNN with at least 2 hidden layers. 
+5. Design and implement a fully connected deep neural network with at least 2 hidden layers for a classification application. 
 Use appropriate Learning Algorithm, output function and loss function.
 
 Module 3 (Any One)
