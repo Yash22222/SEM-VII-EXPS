@@ -1,1 +1,13 @@
-
+Sr.No    Name of Experiment 
+  1      To Study Hadoop Ecosystem. 
+  2      Installation of Hadoop and perform operations on Hadoop. 
+  3      Transfer data between Hadoop and relational database servers using sqoop. 
+  4      Install and configure MongoDB to execute NoSQL Commands(CRUD) 
+  5      Write a program to implement word count programs using MapReduce. 
+  6      Implement DGIM/Bloom Filter using any programming language. 
+  7      Implementing FM using any programming language. 
+  8      Implementing simple algorithms in Map-Reduce: Matrix multiplication, Aggregates, Joins, Sorting, Searching, etc.
+  9      Implementing a Clustering algorithm (K-Means/CURE) using Map-Reduce/R programming. 
+ 10      Implement real life large data applications. CO6
+ 11      To implement basic functions,commands and data visualization in R programming. CO6
+ 12      Mini Project
