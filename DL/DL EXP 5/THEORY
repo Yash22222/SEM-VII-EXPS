@@ -1,1 +1,35 @@
-AIM - 
+AIM - Design and implement a fully connected deep neural network with at least 2 hidden layers for a classification application. 
+Use appropriate Learning Algorithm, output function, and loss function.
+
+THEORY - 
+Introduction
+A fully connected deep neural network (DNN) is an artificial neural network (ANN) where each neuron in one layer is connected to every neuron in the next layer. DNNs are widely used for various tasks, including classification, regression, and more complex tasks such as image and speech recognition.
+
+In this discussion, we will design and implement a DNN for a classification task with the following components:
+
+1. Input Layer: Takes the input features of the data.
+2. Hidden Layers: At least two layers with activation functions.
+3. Output Layer: Generates the classification output.
+4. Learning Algorithm: Stochastic Gradient Descent (SGD) or other optimizers like Adam.
+5. Output Function: Softmax function for multi-class classification.
+6. Loss Function: Categorical Cross-Entropy loss for measuring the error in multi-class classification.
+
+Designing the DNN
+
+1. Input Layer: This layer consists of neurons that accept the input features of the dataset. The number of neurons equals the number of features in the dataset.
+2. Hidden Layers:
+   Layer 1: A dense layer with a certain number of neurons (e.g., 64) and a ReLU (Rectified Linear Unit) activation function. ReLU is commonly used because it introduces non-linearity into the model and helps prevent the vanishing gradient problem.
+   Layer 2: Another dense layer, typically with fewer neurons than the first hidden layer (e.g., 32), also using the ReLU activation function.
+3. Output Layer: This layer consists of neurons equal to the number of classes in the classification task (e.g., 3 for three classes). The activation function used here is the Softmax function, which converts the outputs to probabilities summing to one, making it suitable for multi-class classification. Learning Algorithm:
+4. Stochastic Gradient Descent (SGD): A widely used optimization algorithm that updates the weights incrementally after processing each training example. However, more advanced optimizers like Adam (Adaptive Moment Estimation) are often preferred because they adapt the learning rate during training, often leading to faster convergence.
+5. Loss Function: Categorical Cross-Entropy: This is the most appropriate loss function for multi-class classification tasks. It measures the discrepancy between the true labels and the predicted probabilities, penalizing predictions that are far from the true class.
+
+Conclusion
+The fully connected DNN designed above serves as a fundamental example of deep learning for classification tasks. With two hidden layers, ReLU activations, Softmax output, and the use of Adam optimizer, this network can efficiently learn and classify data into multiple categories. 
+In real-world applications, the architecture and hyperparameters would be adjusted based on the complexity of the task and the dataset characteristics.
+
+
+
+
+
+
