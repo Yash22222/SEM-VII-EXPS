@@ -1,0 +1,21 @@
+AIM - To design the architecture and implement an autoencoder model for image denoising.
+
+Theory -
+Image Denoising - Image denoising is the process of removing noise or unwanted artifacts from an image, enhancing its visual quality and making it more suitable for analysis. 
+Noise in images can come from various sources, such as sensor limitations, compression artifacts, transmission errors, or environmental factors. 
+The objective of denoising is to recover the original image as accurately as possible while minimizing the impact of noise.
+
+With the rise of deep learning, particularly Convolutional Neural Networks (CNNs), image denoising has advanced significantly. 
+Techniques like denoising autoencoders have shown impressive results by learning to remove noise from images. Autoencoders consist of an encoder-decoder structure: 
+the encoder compresses the image, removing noise in the process, and the decoder reconstructs a cleaner version of the image.
+
+Conclusion -
+In this experiment, we designed and implemented an autoencoder model for image denoising. The model utilized convolutional layers for feature extraction and upsampling layers for reconstruction. 
+By training the autoencoder on noisy images from the MNIST dataset, we effectively reduced noise and improved the clarity of the test images. 
+This approach demonstrates the effectiveness of autoencoders for image denoising tasks, showcasing their ability to learn meaningful representations and remove unwanted artifacts while preserving essential features of the original image.
+
+
+
+
+
+
