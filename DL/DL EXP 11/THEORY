@@ -1,0 +1,24 @@
+AIM - To design and implement a GRU (Gated Recurrent Unit) model for real-life applications, such as chatbots, where the model will utilize gated 
+connections to maintain relevant information over long time steps.
+
+THEORY: Gated Recurrent Unit (GRU)
+GRU is an advanced form of RNN designed to handle dependencies within sequential data more effectively by incorporating gating mechanisms. 
+The two primary gates in a GRU are:
+
+1. Update Gate: Decides the amount of past information to pass along.
+2. Reset Gate: Decides the extent to which past information should be forgotten.
+
+This structure allows GRUs to manage long-term dependencies and combat the vanishing and exploding gradient issues common in standard RNNs. 
+Unlike LSTMs, GRUs use fewer gates, which makes them computationally lighter while still achieving similar performance.
+
+Working of a GRU - The model takes in the current input and previous hidden state.
+For each time step:- 
+        1. The update and reset gates are calculated based on the current input and the hidden state.
+        2. A candidate hidden state is generated, which is then combined with the previous hidden state based on the update gate.
+        3. The final output is the hidden state of each GRU cell at the end of the sequence.
+
+GRUs are effective in applications like chatbots, speech recognition, machine translation, and time series forecasting due to their ability to retain relevant 
+context across long sequences.
+
+CONCLUSION - GRU models provide a lightweight alternative to LSTMs, maintaining high performance while requiring less computational power. 
+The simplicity and efficiency of GRUs make them suitable for applications where quick training and response times are needed, such as chatbots and real-time forecasting.
