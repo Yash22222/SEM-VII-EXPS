@@ -1,0 +1,31 @@
+AIM - Design and implement an RNN for the classification of temporal data and sequence-to-sequence data modeling.
+
+THEORY - Recurrent Neural Networks (RNNs) are a type of neural network designed specifically for processing sequential data, such as time series, text, and audio. 
+         RNNs have the unique capability of retaining information from previous steps in a sequence, allowing them to learn temporal dependencies, 
+         which is particularly useful for tasks like machine translation, text generation, and speech recognition.
+
+RNNs can be applied in various sequence modeling tasks, which include-
+
+1. One-to-sequence (One-to-many): For example, generating a sequence of words as captions for a single image.
+2. Sequence-to-one (Many-to-one): For example, sentiment analysis, where a sequence of words is mapped to a single sentiment label.
+3. Sequence-to-sequence (Many-to-many): For example, machine translation, where one sequence (e.g., in English) is translated into another sequence (e.g., in French).
+
+These models can perform tasks that require understanding and generating sequences with varying lengths and have widespread applications:
+
+1. Time Series Prediction: Forecasting values in stock markets, weather, etc.
+2. Text Mining and Sentiment Analysis: Detecting the sentiment in texts.
+3. Machine Translation: Translating sentences from one language to another.
+4. Image Captioning: Generating descriptions for images.
+5. Speech Recognition: Converting audio into text.
+
+RNNs are foundational in sequence-to-sequence modeling and serve as building blocks for advanced models like LSTMs and GRUs.
+
+ENCODER-DECODER ARCHITECTURE - The encoder-decoder structure in RNNs is particularly useful for tasks where input and output sequences vary in length. 
+The encoder processes the input sequence to produce a fixed-length vector, which the decoder then uses to generate the output sequence.
+
+1. Encoder: Takes the input sequence, processes each element, and encodes it into a context vector.
+2. Decoder: Uses the context vector to generate the target sequence element-by-element.
+
+CONCLUSION - RNNs are crucial in analyzing and understanding sequential data, and they provide the basis for more advanced models like LSTMs and GRUs. 
+The encoder-decoder structure is particularly well-suited for sequence-to-sequence tasks, such as language translation and text generation. 
+RNN-based models are applied in various fields, including time series forecasting, text and speech processing, and more complex AI applications.
